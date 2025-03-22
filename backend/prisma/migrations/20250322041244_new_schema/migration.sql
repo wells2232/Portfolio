@@ -1,3 +1,18 @@
+/*
+  Warnings:
+
+  - You are about to drop the `projetos_tecnologias` table. If the table is not empty, all the data it contains will be lost.
+
+*/
+-- DropForeignKey
+ALTER TABLE "projetos_tecnologias" DROP CONSTRAINT "projetos_tecnologias_projetoId_fkey";
+
+-- DropForeignKey
+ALTER TABLE "projetos_tecnologias" DROP CONSTRAINT "projetos_tecnologias_tecnologiaId_fkey";
+
+-- DropTable
+DROP TABLE "projetos_tecnologias";
+
 -- CreateTable
 CREATE TABLE "_ProjetoToTecnologia" (
     "A" INTEGER NOT NULL,
